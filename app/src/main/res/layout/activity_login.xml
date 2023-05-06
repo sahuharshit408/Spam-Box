@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:padding="@dimen/_40sdp"
+    android:scrollbars="none"
+    tools:context=".Activities.Login"
+    android:background="@color/Primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/Primary"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/login"
+            android:textColor="@color/TextPrimary"
+            android:textSize="@dimen/_36ssp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:hint="@string/user_id"
+            android:textColorHint="@color/TextSecondary"
+            app:boxBackgroundColor="@color/Primary"
+            app:boxCornerRadiusBottomEnd="@dimen/_18sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_18sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_18sdp"
+            app:boxCornerRadiusTopStart="@dimen/_18sdp"
+            app:boxStrokeColor="@color/TextPrimary"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/TextSecondary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/TextPrimary"
+                android:textSize="@dimen/_12ssp"
+                android:textColorHint="@color/TextSecondary"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:hint="@string/password"
+            android:textColorHint="@color/TextSecondary"
+            app:boxBackgroundColor="@color/Primary"
+            app:boxCornerRadiusBottomEnd="@dimen/_18sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_18sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_18sdp"
+            app:boxCornerRadiusTopStart="@dimen/_18sdp"
+            app:boxStrokeColor="@color/TextPrimary"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/TextSecondary"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/TextSecondary1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/TextPrimary"
+                android:textSize="@dimen/_12ssp"
+                android:textColorHint="@color/TextSecondary"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_14sdp"
+            >
+
+            <View
+                android:layout_width="@dimen/_97sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:background="@color/TextPrimary"
+                android:layout_gravity="start|center"
+                android:foregroundGravity="center_vertical"
+                android:layout_marginStart="@dimen/_5sdp"/>
+
+            <TextView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textColor="@color/TextPrimary"
+                android:textSize="@dimen/_16ssp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="@dimen/_2sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp" />
+
+            <View
+                android:layout_width="@dimen/_97sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:background="@color/TextPrimary"
+                android:layout_gravity="end|center"
+                android:foregroundGravity="center_vertical"
+                android:layout_marginEnd="@dimen/_5sdp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <com.google.android.material.button.MaterialButton
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_48sdp"
+           android:layout_marginTop="@dimen/_8sdp"
+           app:strokeColor="@color/TextPrimary"
+           app:strokeWidth="2dp"
+           app:cornerRadius="@dimen/_18sdp"
+           android:text="@string/magic_link"
+           android:textSize="@dimen/_14ssp"
+           android:textColor="@color/TextPrimary"
+           android:backgroundTint="@color/Primary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/by_sending_a_link_on_your_gmail"
+            android:textColor="@color/TextSecondary1"
+            android:textSize="@dimen/_12ssp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

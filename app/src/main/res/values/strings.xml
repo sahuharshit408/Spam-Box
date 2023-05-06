@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Spam Box</string>
+    <string name="login">Login</string>
+    <string name="user_id">User ID</string>
+    <string name="password">Password</string>
+    <string name="by_sending_a_link_on_your_gmail">By Sending a link on your gmail</string>
+    <string name="or">or</string>
+    <string name="magic_link">Magic Link</string>
+</resources>
